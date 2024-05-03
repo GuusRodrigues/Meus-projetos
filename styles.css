@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.nav-top {
+    height: 100px; 
+    background-color: rgba(158, 35, 35, 0.801); 
+    border-bottom:1px solid #340c0c;
+}
+
+header img {
+    width: 100px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    font-size: 22px;
+    text-decoration: none;
+    color: #333; 
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.catalogo {
+    background-color: #947d7d;
+    padding: 20px;
+    color: #e2dfdf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banda, .musica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banda img {
+    width: 280px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+.musica img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #773f3f;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+header img {
+    animation: spin 2s linear infinite;
+}
